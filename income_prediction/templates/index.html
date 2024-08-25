@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Data Analysis</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Income Prediction Data Analysis</h1>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/income_distribution.png') }}" alt="Income Distribution">
+            <img src="{{ url_for('static', filename='images/gender_income_distribution.png') }}" alt="Income Distribution by Gender">
+            <img src="{{ url_for('static', filename='images/education_income_distribution.png') }}" alt="Income Distribution by Education Level">
+            <img src="{{ url_for('static', filename='images/workclass_income_distribution.png') }}" alt="Workclass Income Distribution">
+        </div>
+        <a href="{{ url_for('prediction') }}" class="btn">Predict Income</a>
+    </div>
+</body>
+</html>

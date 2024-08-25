@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+    <title>Income Prediction</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Predict Income</h1>
+        <form action="{{ url_for('result') }}" method="POST">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+
+            <label for="workclass">Workclass:</label>
+            <input type="text" id="workclass" name="workclass" required><br>
+
+            <label for="education">Education:</label>
+            <input type="text" id="education" name="education" required><br>
+
+            <label for="occupation">Occupation:</label>
+            <input type="text" id="occupation" name="occupation" required><br>
+
+            <label for="sex">Sex:</label>
+            <input type="text" id="sex" name="sex" required><br>
+
+            <label for="capital-gain">Capital Gain:</label>
+            <input type="number" id="capital-gain" name="capital-gain" required><br>
+
+            <label for="capital-loss">Capital Loss:</label>
+            <input type="number" id="capital-loss" name="capital-loss" required><br>
+
+            <label for="hours-per-week">Hours per Week:</label>
+            <input type="number" id="hours-per-week" name="hours-per-week" required><br>
+
+            <label for="native-country">Native Country:</label>
+            <input type="text" id="native-country" name="native-country" required><br>
+
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
